@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B11B398-9E8B-4E6E-9A2A-59AB8A7CA5C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DBMSQuanLyBanHang</RootNamespace>
+    <AssemblyName>DBMSQuanLyBanHang</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Manager\CategoryManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\CategoryManage.Designer.cs">
+      <DependentUpon>CategoryManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\EnterCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\EnterCode.Designer.cs">
+      <DependentUpon>EnterCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ImportOrderManager2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\.Designer.cs">
+      <DependentUpon>ImportOrderManager2.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\RegisterUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\RegisterUser.Designer.cs">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\RevenueCorrelation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\RevenueCorrelation.Designer.cs">
+      <DependentUpon>RevenueCorrelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\RevenueManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\RevenueManage.Designer.cs">
+      <DependentUpon>RevenueManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\SuppilerManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\SuppilerManage.Designer.cs">
+      <DependentUpon>SuppilerManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyBanHangDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBanHangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiptStatus.Designer.cs">
+      <DependentUpon>ReceiptStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\EmployeeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\EmployeeManager.Designer.cs">
+      <DependentUpon>EmployeeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ImportOrderManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ImportOrderManager.Designer.cs">
+      <DependentUpon>ImportOrderManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ReceiptManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\ReceiptManager.Designer.cs">
+      <DependentUpon>ReceiptManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MY_DB.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\CategoryTypeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CategoryTypeView.Designer.cs">
+      <DependentUpon>CategoryTypeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CategoryView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CategoryView.Designer.cs">
+      <DependentUpon>CategoryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmployeeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EmployeeView.Designer.cs">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ImportOrderView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ImportOrderView.Designer.cs">
+      <DependentUpon>ImportOrderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RecipeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RecipeView.Designer.cs">
+      <DependentUpon>RecipeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SupplierView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SupplierView.Designer.cs">
+      <DependentUpon>SupplierView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Manager\CategoryManage.resx">
+      <DependentUpon>CategoryManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\EmployeeManager.resx">
+      <DependentUpon>EmployeeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\EnterCode.resx">
+      <DependentUpon>EnterCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ImportOrderManager2.resx">
+      <DependentUpon>ImportOrderManager2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\RegisterUser.resx">
+      <DependentUpon>RegisterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\RevenueCorrelation.resx">
+      <DependentUpon>RevenueCorrelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\RevenueManage.resx">
+      <DependentUpon>RevenueManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\SuppilerManage.resx">
+      <DependentUpon>SuppilerManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiptStatus.resx">
+      <DependentUpon>ReceiptStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ImportOrderManager.resx">
+      <DependentUpon>ImportOrderManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\ReceiptManager.resx">
+      <DependentUpon>ReceiptManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\CategoryTypeView.resx">
+      <DependentUpon>CategoryTypeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CategoryView.resx">
+      <DependentUpon>CategoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EmployeeView.resx">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ImportOrderView.resx">
+      <DependentUpon>ImportOrderView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RecipeView.resx">
+      <DependentUpon>RecipeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SupplierView.resx">
+      <DependentUpon>SupplierView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QuanLyBanHangDataSet.xsc">
+      <DependentUpon>QuanLyBanHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyBanHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyBanHangDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyBanHangDataSet.xss">
+      <DependentUpon>QuanLyBanHangDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
